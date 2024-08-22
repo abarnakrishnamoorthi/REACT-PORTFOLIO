@@ -1,0 +1,137 @@
+.about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    margin: 80px 170px;
+}
+
+.about-title {
+    position: relative;
+}
+
+.about-title h1 {
+    padding: 0px 30px;
+    font-size: 80px; /* Large font size for the title */
+    font-weight: 600; /* Make the title bold */
+}
+
+.about-title img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -1; /* Position the image behind the text */
+}
+
+
+
+.about-section {
+    display: flex;
+    gap: 100px;
+    align-items: center; /* Align content vertically for a balanced look */
+}
+
+/* Image Styling */
+.about-section img {
+    width: 200px; /* Set desired width */
+    height: 290px; /* Set desired height for the oval shape */
+    border-radius: 50%; /* Make the image oval */
+    border: 5px solid #ff9800; /* Add a border with a color of your choice */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Add shadow for a 3D effect */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-section img:hover {
+    transform: scale(1.05); /* Slightly enlarge the image on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4); /* Darker shadow on hover */
+}
+
+
+
+.about-right {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}
+
+.about-para {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.about-skills {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.about-skill {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.about-skill p {
+    min-width: 150px;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.skill-bar {
+    outline: none;
+    border: none;
+    height: 8px;
+    border-radius: 50px;
+    background: linear-gradient(264deg, #ea8426 -5.09%, #b415ff 108.2%);
+}
+
+.about-achievements-container {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    margin-bottom: 80px;
+}
+
+.about-achievements {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    transition: 0.5s;
+}
+
+.about-achievements h1 {
+    font-size: 60px;
+    font-weight: 700;
+    background: linear-gradient(270deg, #ea8426 50.41%, #b415ff 108.2%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.about-achievements p {
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.about-skill:hover {
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+
+.about-achievements:hover {
+    transform: scale(1.12);
+    transition: 0.5s;
+}
+
+/* Media Query for Long Passport Size Image */
+@media screen and (max-width: 768px) {
+    .about-left img {
+        width: 100px;
+        height: 150px; /* Taller aspect ratio for a long passport size */
+        border-radius: 10px; /* Less rounded corners to fit the passport style */
+    }
+}
