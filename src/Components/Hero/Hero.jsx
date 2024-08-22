@@ -7,7 +7,7 @@ const Hero = () => {
     return (
         <div id='home' className='hero'>
             <img src={pic} alt="Hero" />
-            <h1><span>ABARNA </span>  </h1>
+            <h1><span>ABARNA KRISHNAMOORTHI</span>  </h1>
             <p>
             
     I am a full-stack developer from India, skilled in HTML, CSS, JavaScript, React, and back-end technologies, 
