@@ -57,22 +57,22 @@ const Contact = () => {
                             <p>abarnak.22it@kongu.edu</p>
                         </div>
                         <div className="contact-detail">
-                            <img src={image} alt="Mail Icon" />
-                            <p>
-                            <a href="https://www.linkedin.com/in/abarna-krishnamoorthi-320391259/" target="_blank" rel="noopener noreferrer" className="contact-link">
-    https://www.linkedin.com/in/abarna-krishnamoorthi-320391259/
-</a>
-
-                            </p>
-                        </div>
-                        <div className="contact-detail">
-    <img src={git} alt="Mail Icon" />
+    <img src={image} alt="LinkedIn Icon" />
     <p>
-        <a href="https://github.com/abarnakrishnamoorthi" target="_blank" rel="noopener noreferrer" className="contact-link">
-            https://github.com/abarnakrishnamoorthi
+        <a href="https://www.linkedin.com/in/abarna-krishnamoorthi-320391259/" target="_blank" rel="noopener noreferrer" className="contact-link">
+            LinkedIn Profile
         </a>
     </p>
 </div>
+<div className="contact-detail">
+    <img src={git} alt="GitHub Icon" />
+    <p>
+        <a href="https://github.com/abarnakrishnamoorthi" target="_blank" rel="noopener noreferrer" className="contact-link">
+            GitHub Profile
+        </a>
+    </p>
+</div>
+
 
                         <div className="contact-detail">
                             <img src={location_icon} alt="Location Icon" />
