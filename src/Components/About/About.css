@@ -34,10 +34,10 @@
 
 /* Image Styling */
 .about-section img {
-    width: 200px; /* Set desired width */
-    height: 290px; /* Set desired height for the oval shape */
+    width: 210px; /* Set desired width */
+    height: 300px; /* Set desired height for the oval shape */
     border-radius: 50%; /* Make the image oval */
-    border: 5px solid #ff9800; /* Add a border with a color of your choice */
+    border: 5px solid #f6f5f8; /* Add a border with a color of your choice */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Add shadow for a 3D effect */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }

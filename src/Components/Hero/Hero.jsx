@@ -1,6 +1,6 @@
 import React from 'react';
 import './Hero.css';
-import pic from '../../assets/pic.jpg';
+import pic from '../../assets/22ITR001.jpg';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 
 const Hero = () => {
@@ -20,7 +20,7 @@ const Hero = () => {
                     <AnchorLink className='anchor-link' offset={50} href='#contact'>Connect With Me</AnchorLink>
                 </div>
                 <div className='hero-resume'>
-                    <a href='resumee.pdf' target='_blank' rel='noopener noreferrer'>My Resume</a>
+                    <a href='https://drive.google.com/file/d/1mQnksI18HxPBoBp9SqdQvsJ7dN1JDVbi/view?usp=drive_link' target='_blank' rel='noopener noreferrer'>My Resume</a>
                 </div>
             </div>
         </div>
