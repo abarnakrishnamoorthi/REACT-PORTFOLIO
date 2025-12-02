@@ -20,7 +20,7 @@ const Hero = () => {
                     <AnchorLink className='anchor-link' offset={50} href='#contact'>Connect With Me</AnchorLink>
                 </div>
                 <div className='hero-resume'>
-                    <a href='https://drive.google.com/file/d/1mQnksI18HxPBoBp9SqdQvsJ7dN1JDVbi/view?usp=drive_link' target='_blank' rel='noopener noreferrer'>My Resume</a>
+                    <a href='https://drive.google.com/file/d/1KNYaFxfyV_CquycaLCpX1QBqd1qV4foC/view?usp=drive_link' target='_blank' rel='noopener noreferrer'>My Resume</a>
                 </div>
             </div>
         </div>
