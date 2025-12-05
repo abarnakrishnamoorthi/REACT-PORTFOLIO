@@ -1,0 +1,128 @@
+/* Navbar Styling */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 170px;
+}
+
+/* Navigation Menu Styling */
+.nav-menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 60px;
+    font-size: 20px;
+}
+
+.nav-menu li {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.nav-menu li a {
+    text-decoration: none; /* Remove underline from navigation links */
+    color: white;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.nav-menu li:hover a {
+    color: #ff9800; /* Highlight color on hover */
+    transform: scale(1.1); /* Slightly enlarge the link on hover */
+}
+
+.nav-menu li img {
+    display: flex;
+    margin: auto;
+    position: absolute;
+    bottom: -10px; /* Adjust based on your design */
+    left: 50%;
+    transform: translateX(-50%);
+    transition: opacity 0.3s ease;
+}
+
+.nav-menu li.active img {
+    opacity: 1;
+}
+
+.nav-menu li img {
+    opacity: 0;
+}
+
+/* Connect With Me Button Styling */
+.nav-connect {
+    padding: 20px 40px;
+    border-radius: 50px;
+    background: linear-gradient(267deg, #DA7C25 0.36%, #B923E1 102.0%);
+    font-size: 22px;
+    color: white;
+    text-decoration: none; /* Remove underline from the button */
+    display: inline-block;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow for a 3D effect */
+    transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.nav-connect:hover {
+    transform: scale(1.05);
+    background: linear-gradient(267deg, #B923E1 0.36%, #DA7C25 102.0%); /* Invert gradient on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Darker shadow on hover */
+}
+
+.nav-mob-close {
+    display: none;
+}
+
+.nav-mob-open {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        margin: 20px;
+    }
+
+    .nav-connect {
+        display: none;
+    }
+
+    .nav-mob-open {
+        display: block;
+        position: fixed;
+        right: 30px;
+        top: 20px; /* Added top position */
+    }
+
+    .nav-mob-close {
+        display: block;
+        position: relative;
+        top: 30px;
+        left: 290px;
+        width: 30px;
+    }
+
+    .nav-menu {
+        position: fixed;
+        flex-direction: column;
+        align-items: flex-start; /* Corrected from 'start' to 'flex-start' */
+        top: 0;
+        gap: 30px;
+        background-color: black;
+        width: 350px;
+        height: 100%;
+        z-index: 2;
+        transition: right 0.5s ease;
+        right: -350px;
+    }
+
+    .nav-menu li {
+        font-size: 30px;
+        padding-left: 100px;
+        flex-direction: row;
+        gap: 20px;
+    }
+}

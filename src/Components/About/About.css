@@ -1,0 +1,214 @@
+/* ===================== ABOUT MAIN ===================== */
+.about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    margin: 80px 170px;
+}
+
+/* ===================== TITLE ===================== */
+.about-title {
+    position: relative;
+}
+
+.about-title h1 {
+    padding: 0px 30px;
+    font-size: 80px;
+    font-weight: 600;
+}
+
+.about-title img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+}
+
+/* ===================== LEFT-RIGHT CONTENT ===================== */
+.about-section {
+    display: flex;
+    gap: 100px;
+    align-items: center;
+}
+
+/* IMAGE STYLING (Oval + Shadow) */
+.about-section img {
+    width: 210px;
+    height: 300px;
+    border-radius: 50%;
+    border: 5px solid #f6f5f8;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-section img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.4);
+}
+
+/* ===================== RIGHT TEXT CONTENT ===================== */
+.about-right {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}
+
+.about-para {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+/* ===================== SKILLS ===================== */
+.about-skills {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.about-skill {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.about-skill p {
+    min-width: 150px;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+/* Skill Bar */
+.skill-bar {
+    outline: none;
+    border: none;
+    height: 8px;
+    border-radius: 50px;
+    background: linear-gradient(264deg, #ea8426 -5.09%, #b415ff 108.2%);
+}
+
+.about-skill:hover {
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+
+/* ===================== ACHIEVEMENTS ===================== */
+.about-achievements-container {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    margin-bottom: 80px;
+}
+
+.about-achievements {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    transition: 0.5s;
+}
+
+.about-achievements h1 {
+    font-size: 60px;
+    font-weight: 700;
+    background: linear-gradient(270deg, #ea8426 50.41%, #b415ff 108.2%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.about-achievements p {
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.about-achievements:hover {
+    transform: scale(1.12);
+}
+
+/* ===================== FIGMA + PHOTOPEA LINKS GRID ===================== */
+.links-section {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.links-section h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: #a647ab;
+}
+
+/* Grid Layout */
+.links-grid {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+/* ===================== GLASS MORPH LINK CARD ===================== */
+.link-card {
+    width: 260px;
+    padding: 22px;
+    border-radius: 16px;
+    backdrop-filter: blur(14px);
+    background: rgba(255,255,255,0.08);
+    border: 1px solid rgba(255,255,255,0.25);
+    box-shadow: 0 0 25px rgba(255,255,255,0.08);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+/* Hover Animation */
+.link-card:hover {
+    transform: translateY(-8px) scale(1.06);
+    box-shadow: 0 0 30px rgba(255,255,255,0.3);
+}
+
+/* Card Header */
+.link-card h3 {
+    margin-bottom: 12px;
+    font-size: 20px;
+    color: #c0392b;
+}
+
+/* Links Inside Card */
+.link-card a {
+    display: block;
+    margin: 6px 0;
+    text-decoration: none;
+    color: #fff;  /* white text for visibility */
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.link-card a:hover {
+    color: #ffd700; /* gold color on hover */
+    text-decoration: underline;
+}
+
+/* ===================== RESPONSIVE IMAGE ===================== */
+@media screen and (max-width: 768px) {
+    .about-left img {
+        width: 100px;
+        height: 150px;
+        border-radius: 10px;
+    }
+
+    .about-section {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .about-right {
+        gap: 40px;
+    }
+
+    .links-grid {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
